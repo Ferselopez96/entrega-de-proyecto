@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monchi 24hs</title>
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
@@ -13,22 +18,22 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="headerIndex">
-            <div>
-                <a href="#"><img src="./assets/img/logo-monchi.png" alt=""></a>
+    <header class="nav-wrapper">
+        <nav>
+            <a href="#"><img src="./assets/img/logo-monchi.png" alt=""></a>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>                        
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/shop.html">Shop</a></li>
+                    <li><a href="./pages/paseo.html">Paseo</a></li>
+                    <li><a href="./pages/contactanos.html">Contáctanos</a></li>
+                    <button class="button"><a href="">Registro</a></button>
+                </ul>
             </div>
-                <nav>
-                    <ul class="navBar">
-                        <li><a href="#">Inicio</a></li>                        
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="./pages/shop.html">Shop</a></li>
-                        <li><a href="./pages/paseo.html">Paseo</a></li>
-                        <li><a href="./pages/contactanos.html">Contáctanos</a></li>
-                    </ul>
-                </nav>
-            <div>
-                <button><a href="">Registro</a></button>
-            </div> 
+        </nav>
     </header>
     <main>
         <!-- Section principal -->
