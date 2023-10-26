@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* font-family: 'Nunito', sans-serif;
 font-family: 'Poppins', sans-serif;*/
 
@@ -24,7 +23,7 @@ font-family: 'Poppins', sans-serif;*/
 .headerIndex div button{
         background-color: #0b62aa;
         border-color: #0b62aa;
-        padding: 10px 50px 10px 50px;
+        padding: 10px 40px 10px 40px;
         text-align: center;
         border-radius: 10px;
     }
@@ -45,7 +44,6 @@ font-family: 'Poppins', sans-serif;*/
     list-style: none;
     font-family: 'Poppins', sans-serif;
     gap: 1.875rem;
-    margin-right: 0;
 }
 
 .navBar li a{
@@ -65,6 +63,7 @@ height: 31.25rem;
 display: flex;
 align-items: center;
 padding-top: 0px;
+padding-left: 9.375rem;
 }
 
 .sectionPrincipal div h1{
@@ -96,8 +95,8 @@ padding-top: 0px;
     background-color: #FFC820;
     border-color: #FFC820;
     border-radius: .625rem;
-    padding: 10px 40px 10px 40px;
-    margin-left: 5rem;
+    padding: 10px 30px 10px 30px;
+    margin-left: 2.1875rem;
     margin-top: 15px;
     font-size: 1rem;
     text-decoration: none;
@@ -115,7 +114,41 @@ padding-top: 0px;
     text-decoration: none;
 }
 
-.sectionPrincipal2{
+.sectionNosotros{
+    background-color: #ffffff;
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 0rem;
+}
+
+.sectionNosotros div h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.125rem;
+    line-height: 3rem;
+    color: #073042;
+    padding-left: 2rem;
+    padding-right: 5rem;
+}
+
+.sectionNosotros div h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5625rem;
+    line-height: 3rem;
+    color: #073042;
+    padding-left: 2rem;
+}
+
+.sectionNosotros div p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-top: .625rem;
+    padding-left: 2rem;
+}
+
+.sectionContactos{
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -124,7 +157,7 @@ padding-top: 0px;
     padding-top: 5rem;
 }
 
-.sectionPrincipal2 div h1{
+.sectionContactos div h1{
     font-family: 'Nunito', sans-serif;
     font-size: 3.125rem;
     line-height: 3rem;
@@ -132,14 +165,14 @@ padding-top: 0px;
     padding-left: 5rem;
 }
 
-.sectionPrincipal2 div p{
+.sectionContactos div p{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     padding-top: .625rem;
     padding-left: 5rem;
 }
 
-.sectionPrincipal2 div input{
+.sectionContactos div input{
     display: block;
     justify-content: center;
     border-radius: 1.875rem;
@@ -157,22 +190,20 @@ padding-top: 0px;
     width: 100%;
     height: 15.625rem;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
+    font-size: .9375rem;
     color: white;
     padding-top: .625rem;
-    padding-left: 100px;
+    padding-left: 250px;
 }
 
 .sectionSecundario div h2{
     color:#ffffff;
-    
 }
 
 .sectionSecundario div h3{
     color:#FFC820;
     text-decoration: none;
-    list-style: none;
-    font-size: 2.1875rem;
+    font-size: 1.875rem;
     
 }
 
@@ -190,7 +221,6 @@ padding-top: 0px;
     padding-left: 5rem;
 }
 
-
 /* paseadores calificados */
 
 .sectionCards{
@@ -198,7 +228,8 @@ padding-top: 0px;
     width: 100%;
     align-items: center;
     text-align: center;
-    padding: 50px;
+    gap: 70px;
+    padding-bottom: 3.125rem;
 }
 
 .sectionCards h2{
@@ -212,22 +243,6 @@ padding-top: 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     color: #000000;
-}
-
-.cardContainer1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-}
-
-.cardContainer2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
 }
 
 .sectionCards div button{
@@ -253,18 +268,34 @@ padding-top: 0px;
     text-decoration: none;
     }
 
+.sectionOrder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+}
+
+.cardContainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
 .paseador1{
     width: 16.25rem;
     height: 18.75rem;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border-radius: 5%;
+    border-radius: 10%;
     border-color: #003663;
     border: 4px;
     box-shadow: 1px 2px 10px rgba(128, 128, 128, 0.283);
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding-top: 35px;
 }
 
 .sectionApp{
@@ -327,8 +358,13 @@ padding-top: 0px;
     color: #000000;
 }
 
+.sectionApp div img{
+    left: 0;
+
+}
+
 .cards{
-    width: 16.5625rem;
+    width: 15.9375rem;
     height: 19.375rem;
     background-color: rgb(255, 255, 255);
     border-radius: 10%;
@@ -336,6 +372,7 @@ padding-top: 0px;
     box-shadow: 2px 2px 5px grey;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding-top: 25px;
 }   
 
 .cards div button{
@@ -346,17 +383,16 @@ padding-top: 0px;
     padding: 5px 10px 5px 10px;
     margin-left: 5rem;
     margin-top: 15px;
-    font-size: 1rem;
     text-decoration: none;
-    list-style: none;
 }
+
 .cards div button:hover{
     background-color:#003663;
 }
 
 .cards div button a{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
@@ -394,17 +430,25 @@ padding-top: 0px;
 footer{
     background-color: #003663;
     width: 100%;
-    height: 12.5rem;
+    height: 15.625rem;
 }
 
-.RRSS{
+.redesSociales{
     display: inline-block;
     margin-left: 50px;
+}
+
+.footerList{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    gap: 1.875rem;
 }
 
 .footer{
     display: flex;
     justify-content:space-evenly;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .footer div ul li a{
@@ -412,19 +456,12 @@ footer{
     font-size: .875rem;
     list-style: none;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
     color: white;
-}
-
-.footer div ul li{
-    color: rgb(255, 255, 255);
 }
 
 .footer div p{
     text-align: center;
     align-items: center;
-    color: white;
-    font-family: 'Poppins', sans-serif;
     margin: 3.75rem;
 }
 
@@ -537,12 +574,6 @@ footer{
             flex-direction: column;
             gap: 50px;
         }
-        .cardContainer2{
-            flex-direction: column;
-            gap: 50px;
-        }
-
-
 
         /* footer x 768px */
         .footerEnd{
