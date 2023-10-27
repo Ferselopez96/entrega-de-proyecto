@@ -159,12 +159,10 @@ padding-left: 9.375rem;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding-right: 5rem;
-    padding-top: 5rem;
+    padding-top: 3.75rem;
 }
 
-.sectionContactos div h1{
+.sectionContactos h1{
     font-family: 'Nunito', sans-serif;
     font-size: 3.125rem;
     line-height: 3rem;
@@ -172,27 +170,32 @@ padding-left: 9.375rem;
     padding-left: 5rem;
 }
 
-.sectionContactos div p{
+.sectionContactos p{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    padding-top: .625rem;
-    padding-left: 5rem;
+    padding-top: 40px;
+    padding-left: 200px;
+
 }
 
-.sectionContactos div input{
-    display: block;
-    justify-content: center;
-    border-radius: 1.875rem;
+.sectionContactos form{
+    gap: 150px;
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+.sectionContactos input{
+    line-height: 25px;
+    border-radius: .3125rem;
+    border-color: #16508D;
     font-family: 'Poppins', sans-serif;
     font-size: .75rem;
-    padding-top: .3125rem;
-    padding-left: 1rem;
-    padding-right: 2rem;
+    gap: 11.25rem;
 }
 
 .sectionSecundario{
     background-color: #16508D;
-        width: 100%;
+    width: 100%;
     height: 15.625rem;
     display: flex;
     justify-content: space-around;
@@ -455,31 +458,14 @@ footer{
     
 }
 
-/* .footer div ul li a{
-    text-decoration: none;
-    font-size: .875rem;
-    list-style: none;
-    align-items: center;
-    color: white;
-}
-
-.footer div p{
-    text-align: center;
-    align-items: center;
-    margin: 3.75rem;
-} */
-
-/* .footerColor{
-    color: #FFC820;
-    font-weight: bold;
-} */
-
 /* paseo */
 
 .sectionPrincipalimg{
     background-color: white;
     font-size: 4.0625rem;
     background: url("../assets/img/picture-paseador.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 31.875rem;
     font-family: 'Nunito', sans-serif;
@@ -537,27 +523,37 @@ footer{
         a:hover{
             color: #FFC820;
         }
-
-        /* main x 768px */
+        
         .sectionPrincipal{
             display:flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
             width: 100%;
-            height: 480px;
+            height: 56.25rem;
         }
+        .sectionPrincipal div img{
+            display: flex;
+            align-items: center;
+        }
+
         .sectionPrincipal div h1{
-            font-size: 2.5rem;
-            padding-right: 0;
+            font-size: 1.5625rem;
+            line-height: 30px;
+            align-items:start;
+            padding-top: 0%;
         }
         .sectionPrincipal div p{
             font-size: 15px;
-            padding-left: 0;
+            align-items:end;
+            text-align: center;
         }
+
         .sectionPrincipal div button{
             background-color: #FFC820;
             border-color: #FFC820;
             border-radius: .625rem;
-            padding: 5px 20px 5px 20px;
+            padding: 3px 18px 3% 18px;
             margin-top: 15px;
             font-size: 1rem;
             text-decoration: none;
@@ -567,9 +563,11 @@ footer{
         .sectionSecundario{
             background-color: #16508D;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
             width: 100%;
-            height: 15.625rem;
+            height: 700px;
             font-family: 'Nunito', sans-serif;
             font-size: 15px;
             color: white;
@@ -581,6 +579,16 @@ footer{
             text-decoration: none;
             list-style: none;
             font-size: 20px;
+            text-align: center;
+        }
+
+        .sectionApp{
+            background-color:#33363F;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 700px;
         }
 
         .cardContainer1{
@@ -588,8 +596,21 @@ footer{
             gap: 50px;
         }
 
-        /* footer x 768px */
-        .footerEnd{
-            font-size: .625rem;
+        .walker{
+        width: 100%;
+        height: 43.75rem;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
         }
-    }
+
+        .walker div h3{
+            font-size: 30px;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 700px;      
+}
