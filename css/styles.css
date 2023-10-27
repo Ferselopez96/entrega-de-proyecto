@@ -8,7 +8,6 @@
 font-family: 'Poppins', sans-serif;*/
 
 /* Header */
-
 .nav-wrapper{
     width: 100%;
     margin: 0 auto;
@@ -21,13 +20,15 @@ nav{
     align-items: center;
     background-color: #003663;
     padding: 1.25rem 1.875rem;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    gap: 45px;
+    align-items: center;
+    gap: 40px;
 }
 
 a{
@@ -46,19 +47,19 @@ nav #toggle, nav label{
 .button{
     background-color: #0b62aa;
     border-color: #0b62aa;
-    padding: 10px 40px 10px 40px;
+    padding: 8px 40px 8px 40px;
     text-align: center;
-    border-radius: 10px;    
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.button div button:hover{
+.button:hover{
     background-color: #0c087d;
 }
 
-.buton div button a{
+.buton a{
     color: #ffffff;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
@@ -123,7 +124,7 @@ padding-left: 9.375rem;
 .sectionNosotros{
     background-color: #ffffff;
     width: 100%;
-    height: 31.25rem;
+    height: 510px;
     display: flex;
     align-items: center;
     padding-top: 0px;
@@ -191,41 +192,38 @@ padding-left: 9.375rem;
 
 .sectionSecundario{
     background-color: #16508D;
-    display: flex;
-    align-items: center;
-    width: 100%;
+        width: 100%;
     height: 15.625rem;
+    display: flex;
+    justify-content: space-around;
     font-family: 'Nunito', sans-serif;
     font-size: .9375rem;
     color: white;
-    padding-top: .625rem;
-    padding-left: 250px;
+    padding-top: 1.875rem;
 }
 
-.sectionSecundario div h2{
+.sectionSecundario h2{
     color:#ffffff;
 }
 
-.sectionSecundario div h3{
+.sectionSecundario h3{
     color:#FFC820;
-    text-decoration: none;
     font-size: 1.875rem;
-    
 }
 
-.sectionSecundario div p{
+.sectionSecundario p{
     color:#ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
-.sectionSecundario div nav ul li a{
+/* .sectionSecundario div nav ul li a{
     color:#ffffff;
     text-decoration: none;
     list-style: none;
     padding-top: .625rem;
     padding-left: 5rem;
-}
+} */
 
 /* paseadores calificados */
 
@@ -235,7 +233,7 @@ padding-left: 9.375rem;
     align-items: center;
     text-align: center;
     gap: 70px;
-    padding-bottom: 3.125rem;
+    padding-bottom: 40px;
 }
 
 .sectionCards h2{
@@ -274,13 +272,6 @@ padding-left: 9.375rem;
     text-decoration: none;
     }
 
-.sectionOrder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 45px;
-}
-
 .cardContainer1{
     display: flex;
     flex-direction: row;
@@ -289,7 +280,7 @@ padding-left: 9.375rem;
     padding: 20px;
 }
 
-.paseador1{
+.paseador{
     width: 16.25rem;
     height: 18.75rem;
     justify-content: center;
@@ -307,33 +298,37 @@ padding-left: 9.375rem;
 .sectionApp{
     background-color: #33363F;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 12.5rem;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 9.375rem;
+    align-items: center;
     font-family: 'Nunito', sans-serif;
     color: white;
-    padding-left: 2.8125rem;
-    padding-top: 2.8125rem;
+    padding-left: 80px;
+    padding-right: 150px; 
+    padding-top: 3.125rem;
     gap: 100px;
 }
 
-.sectionApp div img{
-    display: flex;
-    margin: 0%;
+.sectionApp img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.sectionApp div button{
+.sectionApp button{
     background-color: #33363F;
     border-color: #FFC820;
     padding: 5px 15px 5px 15px;
     text-align: center;
     border-radius: 10px;
+    margin-top: 1.875rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .sectionApp div button a{
     color: #FFC820;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
 }
 
 .sectionApp div h2{
@@ -344,29 +339,24 @@ padding-left: 9.375rem;
 /* tienda online - cards */
 
 .bannerShop{
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 30px;
+    line-height: 35px;
+    padding-top: 25px;
+    gap: 10PX;
 }
 
 .bannerShop h1{
     font-family: 'Nunito', sans-serif;
     font-size: 2.8125rem;
     color: #073042;
-    padding-top: 3.125rem;
-    padding-left: 1.25rem;
 }
 
 .bannerShop p{
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     color: #000000;
-}
-
-.sectionApp div img{
-    left: 0;
-
 }
 
 .cards{
@@ -436,28 +426,36 @@ padding-left: 9.375rem;
 footer{
     background-color: #003663;
     width: 100%;
-    height: 15.625rem;
+    height: 12.5rem;
 }
 
 .redesSociales{
-    display: inline-block;
+    display: flex;
+    align-items:center;
+    margin-left: 30px;
+    padding-top: .625rem;
+    gap: .9375rem;
+}
+
+.socialMedia{
     margin-left: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content:flex-endC;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    gap: 4.375rem;
 }
 
 .footerList{
     list-style: none;
     font-family: 'Poppins', sans-serif;
-    gap: 1.875rem;
+    
 }
 
-.footer{
-    display: flex;
-    justify-content:space-evenly;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-.footer div ul li a{
+/* .footer div ul li a{
     text-decoration: none;
     font-size: .875rem;
     list-style: none;
@@ -469,12 +467,12 @@ footer{
     text-align: center;
     align-items: center;
     margin: 3.75rem;
-}
+} */
 
-.footerColor{
+/* .footerColor{
     color: #FFC820;
     font-weight: bold;
-}
+} */
 
 /* paseo */
 
@@ -497,16 +495,6 @@ footer{
     line-height: 5.3125rem;
     padding-left: 0;
     padding-top: 0;
-}
-
-.cardContainer3{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
 }
 
 .tarjeta{
