@@ -27,7 +27,7 @@ header nav #toggle {
 header nav label {
   display: none;
 }
-header nav .buttom {
+header div button {
   background-color: #0b62aa;
   border-color: #0b62aa;
   padding: 8px 40px 8px 40px;
@@ -36,12 +36,296 @@ header nav .buttom {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
-header nav .buttom .buttom:hover {
+header div button:hover {
   background-color: #0c087d;
 }
-header nav .buttom a {
+header div button a {
   color: #ffffff;
   text-decoration: none;
+}
+header div button a:hover {
+  background-color: #0c087d;
+}
+
+main .sectionPrincipal {
+  background-color: #ffffff;
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 9.375rem;
+}
+main .sectionPrincipal div h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3rem;
+  color: #073042;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+}
+main .sectionPrincipal div h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 3rem;
+  color: #073042;
+  padding-left: 2rem;
+}
+main .sectionPrincipal p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding-top: 0.625rem;
+  padding-left: 2rem;
+}
+main .sectionPrincipal div button {
+  background-color: #FFC820;
+  border-color: #FFC820;
+  border-radius: 0.625rem;
+  padding: 10px 30px 10px 30px;
+  margin-left: 2.1875rem;
+  margin-top: 15px;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+main .sectionPrincipal div button:hover {
+  background-color: #ffe32e;
+}
+main .sectionPrincipal div button a {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+main .sectionSecundario {
+  background-color: #16508D;
+  width: 100%;
+  height: 15.625rem;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9375rem;
+  color: white;
+  padding-top: 1.875rem;
+}
+main .sectionSecundario h2 {
+  color: #ffffff;
+}
+main .sectionSecundario h3 {
+  color: #FFC820;
+  font-size: 1.875rem;
+}
+main .sectionSecundario p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+main .sectionCards {
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  gap: 70px;
+  padding-bottom: 40px;
+}
+main .sectionCards h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #073042;
+  padding-top: 3.125rem;
+}
+main .sectionCards h2 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+}
+main .sectionCards div button {
+  background-color: #FFC820;
+  border-color: #FFC820;
+  border-radius: 1.25rem;
+  padding: 10px 50px 10px 50px;
+  margin-left: 0;
+  margin-top: 15px;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+main .sectionCards div button:hover {
+  background-color: #ffe32e;
+}
+main .sectionCards div button a {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+main .cardContainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+main .paseador {
+  width: 16.25rem;
+  height: 18.75rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  border-color: #003663;
+  border: 4px;
+  box-shadow: 1px 2px 10px rgba(128, 128, 128, 0.283);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 35px;
+}
+main .sectionNosotros {
+  background-color: #ffffff;
+  width: 100%;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 0rem;
+}
+main .sectionNosotros div h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3rem;
+  color: #073042;
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+main .sectionNosotros div h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 3rem;
+  color: #073042;
+  padding-left: 2rem;
+}
+main .sectionNosotros p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding-top: 0.625rem;
+  padding-left: 2rem;
+}
+main .sectionApp {
+  background-color: #33363F;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 9.375rem;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  padding-left: 80px;
+  padding-right: 150px;
+  padding-top: 3.125rem;
+  gap: 100px;
+}
+main .sectionApp img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+main .sectionApp button {
+  background-color: #33363F;
+  border-color: #FFC820;
+  padding: 5px 15px 5px 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 1.875rem;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+main .sectionApp div a {
+  color: #FFC820;
+}
+main .sectionApp div h2 {
+  color: #FFC820;
+  font-size: 2.375rem;
+}
+main .bannerShop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+  padding-top: 25px;
+  gap: 10PX;
+}
+main .bannerShop h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.8125rem;
+  color: #073042;
+}
+main .bannerShop p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+}
+main .cards {
+  width: 15.9375rem;
+  height: 19.375rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  border: 0.0625rem solid #003663;
+  box-shadow: 2px 2px 5px grey;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 25px;
+}
+main .cards div button {
+  display: flex;
+  background-color: #0b62aa;
+  border-color: #0c087d;
+  border-radius: 0.625rem;
+  padding: 5px 10px 5px 10px;
+  margin-left: 5rem;
+  margin-top: 15px;
+  text-decoration: none;
+}
+main .cards div button:hover {
+  background-color: #003663;
+}
+main .cards div button a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+main .sectionContactos {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3.75rem;
+}
+main .sectionContactos h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3rem;
+  color: #073042;
+  padding-left: 5rem;
+}
+main .sectionContactos p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding-top: 40px;
+  padding-left: 200px;
+}
+main .sectionContactos form {
+  gap: 150px;
+  padding-top: 20px;
+  padding-left: 70px;
+}
+main .sectionContactos form input {
+  line-height: 25px;
+  border-radius: 0.3125rem;
+  border-color: #16508D;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  gap: 11.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
