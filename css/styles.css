@@ -377,7 +377,7 @@ main .sectionContactos .tarjeta {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;
 }
-main .sectionContactos .whatsapp {
+main .whatsapp {
   position: fixed;
   bottom: 0;
   right: 0;
