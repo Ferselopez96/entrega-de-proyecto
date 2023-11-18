@@ -233,9 +233,7 @@ main .sectionApp {
   align-items: center;
   font-family: "Nunito", sans-serif;
   color: white;
-  padding-left: 80px;
-  padding-right: 150px;
-  padding-top: 3.125rem;
+  padding: 50px 250px 10px 100px;
   gap: 100px;
 }
 main .sectionApp img {
@@ -249,13 +247,17 @@ main .sectionApp button {
   padding: 5px 15px 5px 15px;
   text-align: center;
   border-radius: 10px;
-  margin-top: 1.875rem;
+  margin: 30px 20px 50px 20px;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  text-decoration: none;
+}
+main .sectionApp button:hover {
+  background-color: #FFC820;
+  border-color: #FFC820;
 }
 main .sectionApp div a {
   color: #FFC820;
+  text-decoration: none;
 }
 main .sectionApp div h2 {
   color: #FFC820;
@@ -267,11 +269,11 @@ main .bannerShop {
   justify-content: center;
   line-height: 35px;
   padding-top: 25px;
-  gap: 10PX;
+  gap: 15PX;
 }
 main .bannerShop h1 {
   font-family: "Nunito", sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   color: #073042;
 }
 main .bannerShop p {
@@ -336,7 +338,8 @@ main .sectionContactos {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
-  padding-top: 3.75rem;
+  padding-top: 60px;
+  box-sizing: border-box;
 }
 main .sectionContactos h1 {
   font-family: "Nunito", sans-serif;
@@ -351,18 +354,19 @@ main .sectionContactos p {
   padding-top: 40px;
   padding-left: 200px;
 }
-main .sectionContactos form {
-  gap: 150px;
-  padding-top: 20px;
-  padding-left: 70px;
+main .sectionContactos form label {
+  gap: 250px;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  padding: 25px 20px 25px 80px;
 }
 main .sectionContactos form input {
   line-height: 25px;
   border-radius: 0.3125rem;
   border-color: #16508D;
   font-family: "Poppins", sans-serif;
-  font-size: 0.75rem;
   gap: 11.25rem;
+  box-sizing: border-box;
 }
 main .sectionContactos .sectionPrincipalimg {
   background-color: white;
