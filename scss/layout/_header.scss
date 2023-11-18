@@ -4,7 +4,7 @@ header{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        background-color: #003663;
+        background-color: $color-primario;
         padding: 1.25rem 1.875rem;
         font-size: 18px;
         font-family: 'Poppins', sans-serif;
@@ -13,11 +13,17 @@ header{
             display: flex;
             align-items: center;
             gap: 40px;
-            a{
-                text-decoration: none;
-                color: white;
+            li{
                 &:hover{
-                    color: #FFC820;
+                    transform: scale(1.2);
+                    transition:transform 0.5s;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        color: $color-secundario;
+                    }
                 }
             }
         }
@@ -29,21 +35,21 @@ header{
         } 
         }  
         div button{
-            background-color: #0b62aa;
-            border-color: #0b62aa;
+            background-color: $color-primario;
+            border-color: $color-primario;
             padding: 8px 40px 8px 40px;
             text-align: center;
             border-radius: 10px;
             font-size: 18px;
             font-family: 'Poppins', sans-serif;
             &:hover{
-                background-color: #0c087d;
+                background-color: $color-botones;
             }
             a{
                 color: #ffffff;
                 text-decoration: none;
                 &:hover{
-                    background-color: #0c087d;
+                    background-color: $color-botones;
                     }
                 }
             }     

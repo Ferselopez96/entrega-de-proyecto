@@ -1,0 +1,33 @@
+@media (max-width: 425px){
+    nav{
+        .menu{
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 0px;
+            }
+        }
+        #toggle:checked ~ .menu{
+            height: 100%;
+            }
+            label{
+                display: flex;
+                color: white;
+                cursor: pointer;
+                a:hover{
+                    color: #FFC820;
+                }
+            }
+    }
+
+        }
+        // .cardContainer1{
+        //     display: flex;
+        //     flex-direction: column;
+        //     flex-wrap: nowrap;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
