@@ -116,12 +116,54 @@ main{
             }
         }
     }
+    .sectionPrincipalimg{
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+        align-items: center;
+        object-fit:cover;
+        background-image: url("../assets/img/picture-paseador.png");
+        h1{
+            font-family: 'Nunito', sans-serif;
+            font-size: 80px;
+            padding-top: 25px;
+            line-height: 80px;
+            color: white;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            font-size: 30px;
+            padding-left: 85px;
+        }
+        }
     .cardContainer1{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
         padding: 20px;
+        .tarjeta{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            width: 200px;
+            height: 250px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10%;
+            border: .0625rem solid $color-banner;
+            box-shadow: 2px 2px 5px grey;
+            padding: 50px 10px 20px 10px;
+            gap: 10px;
+            &:hover{
+                transform: scale(1.08);
+                transition:transform 0.2s;
+            }
+            h3{
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+            }
+        }
     }
     .paseador{
         width: 16.25rem;
@@ -178,13 +220,13 @@ main{
     .sectionApp{
         background-color: $color-terciario;
         display: grid;
-        grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 20% 50% 30%;
         grid-template-rows: 9.375rem;
         align-items: center;
         font-family: 'Nunito', sans-serif;
         color: white;
         padding: 50px 250px 10px 100px;
-        gap: 100px;
+        gap: 80px;
         img{
             width: 40%;
             height: 100%;
@@ -196,7 +238,7 @@ main{
             padding: 5px 15px 5px 15px;
             text-align: center;
             border-radius: 10px;
-            margin: 30px 20px 50px 20px;
+            margin: 30px 50px 50px 0px;
             font-size: 18px;
             font-family: 'Poppins', sans-serif;
             &:hover{
@@ -222,7 +264,7 @@ main{
         justify-content: center;
         line-height: 35px;
         padding-top: 25px;
-        gap: 15PX;
+        gap: 15px;
         h1{
             font-family: 'Nunito', sans-serif;
             font-size: 50px;
@@ -235,8 +277,9 @@ main{
         }
     }
     .cards{
+        flex-direction: column;
         width: 15.9375rem;
-        height: 325px;;
+        height: 330px;;
         background-color: rgb(255, 255, 255);
         border-radius: 10%;
         border: .0625rem solid $color-banner;
@@ -255,7 +298,7 @@ main{
                 border-color: #0c087d;
                 border-radius: .625rem;
                 padding: 5px 10px 5px 10px;
-                margin-left: 5rem;
+                margin-left: 60px;
                 margin-top: 15px;
                 text-decoration: none;
                 &:hover{
@@ -345,44 +388,6 @@ main{
                 }
             }
         }
-    .sectionPrincipalimg{
-        background-image: url("../assets/img/picture-paseador.png");
-        background-size: 100% 100%;
-        object-fit:contain;
-        width: 100%;
-        height: 600px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-            h1{
-                font-family: 'Nunito', sans-serif;
-                font-size: 3.125rem;
-                line-height: 3rem;
-                color: $color-textoprimario;
-                padding-left: 5rem;
-            }
-        }
-    .sectionCards{
-        .cardContainer1{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 20px;
-                .tarjeta{
-        width: 15.625rem;
-        height: 15.625rem;
-        background-color: rgb(255, 255, 255);
-        border-radius: 10%;
-        border: .0625rem solid $color-textoprimario;
-        box-shadow: 2px 2px 5px grey;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        padding-top: 80px;
-        }
-        }
-    }
-
     }
     .whatsapp{
         position: fixed;

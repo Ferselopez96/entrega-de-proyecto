@@ -170,12 +170,54 @@ main .sectionCards div button a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
+main .sectionPrincipalimg {
+  width: 100%;
+  height: 500px;
+  flex-direction: row;
+  align-items: center;
+  object-fit: cover;
+  background-image: url("../assets/img/picture-paseador.png");
+}
+main .sectionPrincipalimg h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 80px;
+  padding-top: 25px;
+  line-height: 80px;
+  color: white;
+}
+main .sectionPrincipalimg p {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  padding-left: 85px;
+}
 main .cardContainer1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+}
+main .cardContainer1 .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  border: 0.0625rem solid #16508D;
+  box-shadow: 2px 2px 5px grey;
+  padding: 50px 10px 20px 10px;
+  gap: 10px;
+}
+main .cardContainer1 .tarjeta:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s;
+}
+main .cardContainer1 .tarjeta h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 main .paseador {
   width: 16.25rem;
@@ -228,13 +270,13 @@ main .sectionNosotros p {
 main .sectionApp {
   background-color: #33363F;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 50% 30%;
   grid-template-rows: 9.375rem;
   align-items: center;
   font-family: "Nunito", sans-serif;
   color: white;
   padding: 50px 250px 10px 100px;
-  gap: 100px;
+  gap: 80px;
 }
 main .sectionApp img {
   width: 40%;
@@ -247,7 +289,7 @@ main .sectionApp button {
   padding: 5px 15px 5px 15px;
   text-align: center;
   border-radius: 10px;
-  margin: 30px 20px 50px 20px;
+  margin: 30px 50px 50px 0px;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
@@ -269,7 +311,7 @@ main .bannerShop {
   justify-content: center;
   line-height: 35px;
   padding-top: 25px;
-  gap: 15PX;
+  gap: 15px;
 }
 main .bannerShop h1 {
   font-family: "Nunito", sans-serif;
@@ -282,8 +324,9 @@ main .bannerShop p {
   color: black;
 }
 main .cards {
+  flex-direction: column;
   width: 15.9375rem;
-  height: 325px;
+  height: 330px;
   background-color: rgb(255, 255, 255);
   border-radius: 10%;
   border: 0.0625rem solid #16508D;
@@ -302,7 +345,7 @@ main .cards div button {
   border-color: #0c087d;
   border-radius: 0.625rem;
   padding: 5px 10px 5px 10px;
-  margin-left: 5rem;
+  margin-left: 60px;
   margin-top: 15px;
   text-decoration: none;
 }
@@ -389,41 +432,6 @@ main .sectionContactos form div input a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
-main .sectionContactos .sectionPrincipalimg {
-  background-image: url("../assets/img/picture-paseador.png");
-  background-size: 100% 100%;
-  object-fit: contain;
-  width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .sectionContactos .sectionPrincipalimg h1 {
-  font-family: "Nunito", sans-serif;
-  font-size: 3.125rem;
-  line-height: 3rem;
-  color: #073042;
-  padding-left: 5rem;
-}
-main .sectionContactos .sectionCards .cardContainer1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
-}
-main .sectionContactos .sectionCards .cardContainer1 .tarjeta {
-  width: 15.625rem;
-  height: 15.625rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10%;
-  border: 0.0625rem solid #073042;
-  box-shadow: 2px 2px 5px grey;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  padding-top: 80px;
-}
 main .whatsapp {
   position: fixed;
   bottom: 0;
@@ -473,6 +481,8 @@ footer .footer ul li a:hover {
 }
 
 .error {
+  flex-direction: column;
+  align-items: center;
   background-image: url("../assets/img/error.png");
   background-size: 100% 100%;
   object-fit: cover;
@@ -483,16 +493,14 @@ footer .footer ul li a:hover {
   font-family: "Nunito", sans-serif;
   font-size: 3.125rem;
   line-height: 3rem;
-  padding-left: 5rem;
   color: white;
   justify-content: center;
   align-items: center;
 }
-.error h1 h2 {
+.error h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 4.375rem;
-  color: #073042;
-  padding-left: 5rem;
+  font-size: 28px;
+  color: white;
 }
 .error div button {
   display: flex;
@@ -511,6 +519,26 @@ footer .footer ul li a:hover {
   background-color: rgb(186, 148, 9);
 }
 
+@media (max-width: 320px) {
+  main .sectionPrincipal {
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    padding-right: 50px;
+  }
+  main .sectionPrincipal div img {
+    margin-top: 30px;
+    padding-right: 0px;
+    width: 400px;
+    height: 550px;
+  }
+  main .sectionPrincipal div p {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+  }
+}
 @media (max-width: 425px) {
   header nav a img {
     width: 70%;
@@ -546,8 +574,9 @@ footer .footer ul li a:hover {
   }
   main .sectionPrincipal div img {
     margin-top: 50px;
-    margin-left: 50px;
-    width: 250px;
+    margin-left: 10px;
+    padding-left: 50px;
+    width: 300px;
     height: 250px;
   }
   main .sectionPrincipal div h1 {
@@ -563,6 +592,12 @@ footer .footer ul li a:hover {
   main .sectionPrincipal div p {
     font-size: 16px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main .sectionPrincipal div div button {
+    padding-left: 25px;
+    margin-left: 30px;
   }
   main .sectionSecundario {
     flex-direction: column;
@@ -590,6 +625,9 @@ footer .footer ul li a:hover {
     text-align: center;
     gap: 50px;
     padding-bottom: 40px;
+  }
+  main .sectionCards .cardContainer1 .tarjeta h3 {
+    font-size: 5px;
   }
   main .sectionApp {
     grid-template-columns: auto;
@@ -663,14 +701,15 @@ footer .footer ul li a:hover {
   }
   main .walker div h2 {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 40px;
+    padding: 10px 20px 10px 20px;
   }
   main .walker div p {
     font-size: 16px;
     padding: 10px 20px 10px 20px;
   }
   main .walker div h3 {
-    font-size: 30px;
+    font-size: 35px;
   }
   main .sectionNosotros {
     display: block;
@@ -694,6 +733,16 @@ footer .footer ul li a:hover {
   }
   main .bannerShop h1 {
     font-size: 30px;
+  }
+  main .sectionPrincipalimg h1 {
+    font-size: 60px;
+    padding-top: 95px;
+    line-height: 90%;
+    padding-left: 25px;
+  }
+  main .sectionPrincipalimg p {
+    font-size: 30px;
+    padding-left: 25px;
   }
   main .sectionContactos {
     display: flex;
@@ -747,48 +796,34 @@ footer .footer ul li a:hover {
     align-items: center;
     text-align: center;
     padding-top: 80px;
-    height: 700px;
-    background-repeat: no-repeat;
-    object-fit: contain;
+    height: 600px;
+    background-size: cover;
   }
   .error h1 {
     font-size: 40px;
-    padding: 10px 20px 10px 20px;
+    padding: 80px 20px 10px 20px;
+  }
+  .error h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  .error div {
+    padding-left: 60px;
+  }
+  .error div button a {
+    text-decoration: none;
+    color: white;
   }
 }
 /* header x 768px */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   header nav a img {
     width: 70%;
     height: 70%;
   }
-  header nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  header nav .menu ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0px;
-  }
-  header nav #toggle:checked ~ .menu {
-    height: 100%;
-  }
-  header nav label {
-    display: flex;
-    color: white;
-    cursor: pointer;
-  }
-  header nav label a:hover {
-    color: #FFC820;
-  }
-  a:hover {
-    color: #FFC820;
-  }
   main .sectionPrincipal {
     display: flex;
-    flex-direction: row;
     padding-right: 20px;
     padding-left: 0;
     gap: 100px;
@@ -796,12 +831,13 @@ footer .footer ul li a:hover {
   }
   main .sectionPrincipal div img {
     margin-top: 50px;
-    width: 200%;
-    height: 200%;
+    width: 150%;
+    height: 150%;
     padding-left: 0px;
   }
   main .sectionPrincipal div {
-    padding-left: 80px;
+    padding-left: 40px;
+    gap: 20px;
   }
   main .sectionPrincipal div h1 {
     font-size: 30px;
@@ -809,7 +845,148 @@ footer .footer ul li a:hover {
     align-items: center;
     padding-top: 50px;
     padding-right: 0px;
+    padding-left: 0;
     line-height: 30px;
+  }
+  main .sectionPrincipal div p {
+    padding-right: 0px;
+    padding-left: 0;
+  }
+  main .sectionSecundario {
+    display: flex;
+    padding: 30px 20px 10px 50px;
+  }
+  main .sectionSecundario h2 {
+    font-size: 20px;
+  }
+  main .sectionSecundario h3 {
+    font-size: 25px;
+  }
+  main .sectionSecundario p {
+    font-size: 16px;
+  }
+  main .sectionSecundario div iframe {
+    width: 280px;
+    height: 190px;
+  }
+  main .sectionNosotros div img {
+    width: 250%;
+    height: 507px;
+    object-fit: cover;
+  }
+  main .sectionNosotros div h2 {
+    font-size: 40px;
+    padding-left: 240px;
+    padding-top: 10px;
+  }
+  main .sectionNosotros div p {
+    font-size: 18px;
+    padding-right: 30px;
+    padding-left: 240px;
+    padding-bottom: 10px;
+    line-height: 22px;
+  }
+  main .bannerShop h1 {
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  main .sectionApp {
+    grid-template-columns: 25% 50% 25%;
+    padding: 50px 0px 10px 50px;
+    gap: 20px;
+    align-items: center;
+  }
+  main .sectionApp img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .sectionApp div h2 {
+    font-size: 25px;
+  }
+  main .bannerShop {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+  }
+  main .cardContainer1 .cards div h3 {
+    font-size: 18px;
+  }
+  main .cardContainer1 .cards div p {
+    font-size: 12px;
+  }
+  main .cardContainer1 .cards div button {
+    display: block;
+    padding: 5px 5% 5px 5px;
+  }
+  main .cardContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  main .walker div img {
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  main .walker div {
+    padding: 0px 15px 0px 15px;
+  }
+  main .walker div h2 {
+    font-size: 150%;
+    line-height: 30px;
+  }
+  main .walker div p {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+  }
+  main .walker div h3 {
+    font-size: 40px;
+    padding-left: 10px;
+  }
+  main .sectionContactos {
+    width: 700px;
+    padding: 0px 25px 10px 25px;
+  }
+  main .sectionContactos h1 {
+    font-size: 40px;
+  }
+  main .sectionContactos div input {
+    padding-left: 100px;
+  }
+  main .sectionContactos div img {
+    width: 180%;
+    padding-right: 400px;
+  }
+  main .error {
+    padding-top: 100px;
+    gap: 20px;
+  }
+  main h1 {
+    font-size: 50px;
+    padding: 100px 50px 10px 40px;
+  }
+  main h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 0px 20px 0px 0px;
+  }
+  main div button a {
+    text-decoration: none;
+    color: white;
+  }
+  footer {
+    width: 100%;
+    height: 450px;
+  }
+  footer .footer {
+    gap: 20px;
+    padding-right: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -852,7 +1029,7 @@ footer .footer ul li a:hover {
   }
   main .sectionNosotros div img {
     width: 300%;
-    height: 500px;
+    height: 508px;
     margin-top: 0;
   }
   main .sectionNosotros div p {
@@ -866,17 +1043,62 @@ footer .footer ul li a:hover {
     padding-left: 390px;
     padding-top: 10px;
   }
-  main .bannerShop h1 {
+  main .bannerShop div {
+    gap: 10px;
+  }
+  main .bannerShop div h1 {
     font-size: 40px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
-  main .sectionContactos div {
-    padding-left: 60px;
+  main .cardContainer1 .cards div h3 {
+    font-size: 18px;
+  }
+  main .cardContainer1 .cards div p {
+    font-size: 16px;
+  }
+  main .cardContainer1 .cards div button {
+    display: block;
+    padding: 45px 5% 5px px;
+  }
+  main .sectionContactos {
+    width: 100%;
+    height: 900px;
+    padding-left: 30px;
+  }
+  main .sectionContactos h1 {
+    font-size: 50px;
+  }
+  main .sectionContactos div input {
+    padding-left: 100px;
+  }
+  main .error {
+    padding-top: 80px;
+    gap: 20px;
+  }
+  main h1 {
+    font-size: 50px;
+    padding: 100px 90px 10px 90px;
+  }
+  main h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 0px 20px 0px 0px;
+  }
+  main div button a {
+    text-decoration: none;
+    color: white;
   }
   footer {
     width: 100%;
-    height: 350px;
+    height: 400px;
+  }
+  footer .footer {
+    font-size: 18px;
+    gap: 30px;
+    padding-right: 50px;
+    line-height: 30px;
   }
 }
 
