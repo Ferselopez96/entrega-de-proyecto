@@ -1,0 +1,85 @@
+@media (min-width:1024px){
+    main{
+        .sectionPrincipal{
+            display: flex;
+            flex-direction:row;
+            padding-right: 70px;
+            padding-left: 0;
+            gap: 80px;
+            div{
+                img{
+                    margin-top: 50px;
+                    width: 180%;
+                    height: 100%;
+                    padding-left: 0px;
+            }
+            }
+            div{
+                padding-left: 80px;
+                h1{
+                    font-size: 40px;
+                    line-height: 40px;
+                    align-items:center;
+                    padding-top: 30px;
+                    padding-right: 0px;
+                    color: $color-textoprimario;
+                }
+                }
+            }
+        .sectionApp{
+            div{
+                h2{
+                    font-size: 25px;
+                }
+            }
+            div{
+                img{
+                    width: 45%;
+                }
+            }
+        }
+        .cardContainer1{
+            gap: 20px;
+        }
+        .sectionNosotros{
+            width: 100%;
+            margin-top: 0;
+            div{
+                img{
+                    width: 300%;
+                    height: 500px;
+                    margin-top: 0;
+                }
+            }
+            div{
+                p{
+                    font-size: 18px;
+                    padding-right: 30px;
+                    padding-left: 390px;
+                    line-height: 24px;
+                }
+                h2{
+                    font-size: 40px;
+                    padding-left: 390px;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .bannerShop{
+            h1{
+                font-size: 40px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+        .sectionContactos{
+            div{
+                padding-left: 60px; ;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: 350px;
+    }
+}

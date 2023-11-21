@@ -197,7 +197,7 @@
             div{
                 p{
                     font-size: 16px;
-                    padding: 10px 30px 10px 30px;
+                    padding: 0px 30px 10px 30px;
                 }
                 h2{
                     font-size: 30px;
@@ -209,6 +209,29 @@
         .bannerShop{
             h1{
                 font-size: 30px;
+            }
+        }
+        .sectionContactos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 25px 10px 25px;
+            h1{
+                text-align: center;
+                font-size: 40px;
+                line-height: 40px;
+                padding: 20px 25px 20px 25px;
+            }
+            div{
+                input{
+                    padding-left: 30px;
+                }
+            }
+            div{
+                img{
+                    width: 180%;
+                    padding-right: 300px;
+                }
             }
         }
     }
