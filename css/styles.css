@@ -369,10 +369,9 @@ main .sectionContactos form input {
   box-sizing: border-box;
 }
 main .sectionContactos .sectionPrincipalimg {
-  background-color: white;
-  width: 100%;
-  align-items: center;
-  text-align: center;
+  background-image: url("../assets/img/picture-paseador.png");
+  background-size: 100% 100%;
+  object-fit: cover;
 }
 main .sectionContactos .sectionPrincipalimg h1 {
   font-family: "Nunito", sans-serif;
@@ -444,27 +443,269 @@ footer .footer ul li a:hover {
   color: #FFC820;
 }
 
+.error {
+  background-image: url("../assets/img/error.png");
+  background-size: 100% 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+.error h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3rem;
+  padding-left: 5rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.error h1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.375rem;
+  color: #073042;
+  padding-left: 5rem;
+}
+.error div button {
+  display: flex;
+  background-color: #FFC820;
+  border-color: #FFC820;
+  border-radius: 0.625rem;
+  padding: 10px 15px 10px 15px;
+  margin-left: 5rem;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.error div button:hover {
+  background-color: rgb(186, 148, 9);
+}
+
 @media (max-width: 425px) {
-  nav .menu {
+  header nav a img {
+    width: 70%;
+    height: 70%;
+  }
+  header nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-  nav .menu ul {
+  header nav .menu ul {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0px;
   }
-  nav #toggle:checked ~ .menu {
+  header nav #toggle:checked ~ .menu {
     height: 100%;
   }
-  nav label {
+  header nav label {
     display: flex;
     color: white;
     cursor: pointer;
   }
-  nav label a:hover {
+  header nav label a:hover {
     color: #FFC820;
+  }
+  main .sectionPrincipal {
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    padding: 0px 20px 0px 0px;
+  }
+  main .sectionPrincipal div img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 250px;
+    height: 250px;
+  }
+  main .sectionPrincipal div h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 0px;
+    color: #073042;
+  }
+  main .sectionPrincipal div p {
+    font-size: 16px;
+    text-align: center;
+  }
+  main .sectionSecundario {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    padding: 10px 20px 10px 20px;
+  }
+  main .sectionSecundario h2 {
+    font-size: 30px;
+  }
+  main .sectionCards div h2 {
+    font-size: 40px;
+  }
+  main .sectionCards div p {
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+  }
+  main .sectionCards .cardContainer1 {
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding-bottom: 40px;
+  }
+  main .sectionApp {
+    grid-template-columns: auto;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+    gap: 0px;
+    padding: 10px 35px 10px 35px;
+  }
+  main .sectionApp div {
+    text-align: center;
+    gap: 500px;
+  }
+  main .sectionApp div h2 {
+    font-size: 30px;
+  }
+  main .sectionApp div h3 {
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+  }
+  main .sectionApp div div img {
+    width: 85%;
+    height: 85%;
+    margin-top: 10px;
+  }
+  main .bannerShop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+  }
+  main .bannerShop div {
+    gap: 1.25rem;
+  }
+  main .bannerShop div img {
+    width: 95%;
+    padding: 70px 0px 0px 0px;
+  }
+  main .bannerShop div h1 {
+    font-size: 30px;
+  }
+  main .bannerShop div p {
+    font-size: 16px;
+  }
+  main .cardContainer1 {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+  main .walker {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 200px;
+  }
+  main .walker div img {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    width: 85%;
+    border-radius: 10px;
+  }
+  main .walker div h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  main .walker div p {
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+  }
+  main .walker div h3 {
+    font-size: 30px;
+  }
+  main .sectionNosotros {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 900px;
+  }
+  main .sectionNosotros div img {
+    width: 100%;
+    height: 100%;
+  }
+  main .sectionNosotros div p {
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+  }
+  main .sectionNosotros div h2 {
+    font-size: 30px;
+    line-height: 20px;
+    padding: 30px 30px 90px 30px;
+  }
+  main .bannerShop h1 {
+    font-size: 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 750px;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    gap: 3.125rem;
+  }
+  footer .socialMedia {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 60px;
+  }
+  footer .redesSociales {
+    margin-left: 50px;
+  }
+  footer .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 3.125rem;
+  }
+  footer .footerList li {
+    justify-content: center;
+    align-items: center;
+  }
+  .error {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    height: 700px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+  .error h1 {
+    font-size: 40px;
+    padding: 10px 20px 10px 20px;
   }
 }
 /* header x 768px */
@@ -489,6 +730,11 @@ footer .footer ul li a:hover {
   }
   a:hover {
     color: #FFC820;
+  }
+  main .sectionPrincipal {
+    background-color: white;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
